@@ -1,0 +1,100 @@
+<style type="text/css">
+    @import url('./_style.css');
+
+    table,
+    td,
+    th {
+        border-collapse: collapse;
+        padding: 5px;
+    }
+
+    table {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .correct {
+        background-color: rgba(52, 211, 153, 0.3);
+        /* Teal-green */
+    }
+
+    .wrong {
+        background-color: rgba(251, 113, 133, 0.3);
+        /* Rose-pink */
+    }
+
+    .hidden {
+        /* guarantees a consistent width across front and back */
+        font-weight: bold;
+        display: block;
+        line-height: 0;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+</style>
+<script src="_anki_persistence.js"></script>
+<script src="_fahrenlernen_front.js"></script>
+<script src="_fahrenlernen_back.js"></script>
+
+<div id="content" class="fahren">
+    <div class="top">
+        <h3 id="myH1">2.7.05-101</h3>
+        <p>What should be noted when changing a tyre using a car jack?<br></p>
+        <table id="qtable">
+            <tbody>
+                <tr>
+                    <td oninput="onCheck()" style="text-align: center"><input name="ans_1" type="checkbox" value="1"
+                            id="Qi_0"></td>
+                    <td><label for="Qi_0">The car jack may only be applied at the positioning points specified
+                            by the vehicle manufacturer</label></td>
+                </tr>
+                <tr>
+                    <td oninput="onCheck()" style="text-align: center"><input name="ans_2" type="checkbox" value="1"
+                            id="Qi_1"></td>
+                    <td><label for="Qi_1">The ground surface must always be stable and skid-resistant</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td oninput="onCheck()" style="text-align: center"><input name="ans_3" type="checkbox" value="1"
+                            id="Qi_2"></td>
+                    <td><label for="Qi_2">The car jack must always be placed at the mid-point of the vehicle's
+                            length</label></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="bottom">
+        <p id="output"></p>
+        <table id="atable">
+            <tbody>
+                <tr class="wrong">
+                    <td oninput="onCheck()" style="text-align: center"><input name="ans_1_solution" type="checkbox"
+                            value="1" id="Qi_0"></td>
+                    <td><label for="Qi_0">The car jack may only be applied at the positioning points
+                            specified
+                            by the vehicle manufacturer</label></td>
+                </tr>
+                <tr class="wrong">
+                    <td oninput="onCheck()" style="text-align: center"><input name="ans_2_solution" type="checkbox"
+                            value="1" id="Qi_1"></td>
+                    <td><label for="Qi_1">The ground surface must always be stable and
+                            skid-resistant</label>
+                    </td>
+                </tr>
+                <tr class="correct">
+                    <td oninput="onCheck()" style="text-align: center"><input name="ans_3_solution" type="checkbox"
+                            value="1" id="Qi_2"></td>
+                    <td><label for="Qi_2">The car jack must always be placed at the mid-point of the
+                            vehicle's
+                            length</label></td>
+                </tr>
+            </tbody>
+        </table>
+        <p id="canswerresult"><b>Correct answers: 33 %</b></p>
+
+    </div>
+    <div class="hidden" id="MC_solutions">solutions_here</div>
+    <div class="hidden" id="user_answers">user_answers_here</div>
+    <div class="hidden" id="CardType">1</div>
+</div>

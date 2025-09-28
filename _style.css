@@ -1,0 +1,233 @@
+:root {
+  /* For more color schemes check color_schemes.css */
+  --text: #cad3f5;
+  --bg-front: rgba(36, 39, 58, 0.7);
+  --bg-back: rgba(24, 25, 38, 0.7);
+  --accent: #81c8be;
+  --en-text: #8087a2;
+  --divider: #6e738d;
+
+  --edge: color-mix(in srgb, var(--divider), transparent 60%);
+
+  /* Background image variable */
+  --bg-image: url("_ivy.jpg");
+
+  /* Mobile-first font sizes (base = mobile) */
+  --font-size-base: 14px;
+  --font-size-small: 11px;
+  --font-size-medium: 18px;
+  --line-height: 1.3;
+}
+
+@font-face {
+  font-family: literata;
+  src: url("_Literata-VariableFont_opsz,wght.ttf");
+  font-style: normal;
+  font-display: swap; /* Improves loading performance */
+}
+
+@font-face {
+  font-family: literata;
+  src: url("_Literata-Italic-VariableFont_opsz,wght.ttf");
+  font-style: italic;
+  font-display: swap;
+}
+
+html {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-base);
+}
+
+.card,
+.card.nightMode {
+  flex-grow: 1;
+  font-family: "literata", serif;
+  font-weight: 300;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
+  text-align: center;
+  color: var(--text);
+  display: flex;
+  background: var(--bg-image) center/cover no-repeat scroll; /* Mobile-optimized */
+  /* Improve text readability over background */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.card > div,
+.card.nightMode > div {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Mobile-first padding */
+  padding: 15px;
+}
+
+#content {
+  border-radius: 20px; /* Mobile-first smaller radius */
+  box-shadow: 0 6px 45px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--edge); /* Thinner border for mobile */
+  overflow: hidden;
+  width: 100%;
+  max-width: 95%; /* Mobile-first responsive width */
+  margin: 10px auto;
+  /* Smooth transitions for any hover effects */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.top {
+  background-color: none;
+  padding: 10px; /* Mobile-first padding */
+}
+
+.bottom {
+  background-color: none;
+  padding: 10px; /* Mobile-first padding */
+}
+
+.small {
+  color: var(--en-text);
+  font-size: var(--font-size-small);
+}
+
+.medium {
+  font-size: var(--font-size-medium);
+  font-weight: 400;
+}
+
+.sz {
+  color: var(--en-text);
+  font-size: var(--font-size-small);
+}
+
+em,
+strong,
+b {
+  font-style: italic;
+  font-weight: 400; /* Slightly bolder for better readability */
+  color: var(--accent);
+}
+
+.hidden {
+  display: none;
+}
+
+hr {
+  height: 2px;
+  background-color: var(--divider);
+  border: none;
+  margin: 20px 0;
+  border-radius: 1px;
+}
+
+/* Mobile-first touch targets */
+button {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Improve focus states for accessibility */
+button:focus,
+input:focus,
+select:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Prevent horizontal scrolling on mobile */
+body {
+  overflow-x: hidden;
+}
+
+/* Tablet and larger screens (768px and up) */
+@media screen and (min-width: 768px) {
+  :root {
+    --font-size-base: 16px;
+    --font-size-small: 13px;
+    --font-size-medium: 20px;
+    --line-height: 1.5;
+  }
+
+  .card > div,
+  .card.nightMode > div {
+    padding: 20px;
+  }
+
+  #content {
+    max-width: 850px;
+    margin: 15px auto;
+    border-radius: 25px;
+    border-width: 2px;
+  }
+
+  .top,
+  .bottom {
+    padding: 25px;
+  }
+
+  /* Better background attachment for larger screens */
+  .card,
+  .card.nightMode {
+    background-attachment: fixed;
+  }
+
+  /* Remove mobile-specific overflow hidden */
+  body {
+    overflow-x: visible;
+  }
+}
+
+/* Desktop/PC screens (1024px and up) */
+@media screen and (min-width: 1024px) {
+  :root {
+    --font-size-base: 18px;
+    --font-size-small: 14px;
+    --font-size-medium: 22px;
+    --line-height: 1.6;
+  }
+
+.top {
+  background-color: var(--bg-front);
+  padding: 20px; /* Mobile-first padding */
+}
+
+.bottom {
+  background-color: var(--bg-back);
+  padding: 20px; /* Mobile-first padding */
+}
+
+  .card > div,
+  .card.nightMode > div {
+    padding: 20px;
+  }
+
+  #content {
+    margin: 20px auto;
+    border-radius: 30px;
+  }
+
+  .top,
+  .bottom {
+    padding: 30px;
+  }
+}
+
+/* Large desktop screens (1440px and up) */
+@media screen and (min-width: 1440px) {
+  :root {
+    --font-size-base: 20px;
+    --font-size-small: 16px;
+    --font-size-medium: 24px;
+  }
+
+  #content {
+    max-width: 900px;
+  }
+
+  .top,
+  .bottom {
+    padding: 40px;
+  }
+}

@@ -188,15 +188,15 @@ body {
     --line-height: 1.6;
   }
 
-.top {
-  background-color: var(--bg-front);
-  padding: 20px; /* Mobile-first padding */
-}
+  .top {
+    background-color: var(--bg-front);
+    padding: 20px; /* Mobile-first padding */
+  }
 
-.bottom {
-  background-color: var(--bg-back);
-  padding: 20px; /* Mobile-first padding */
-}
+  .bottom {
+    background-color: var(--bg-back);
+    padding: 20px; /* Mobile-first padding */
+  }
 
   .card > div,
   .card.nightMode > div {

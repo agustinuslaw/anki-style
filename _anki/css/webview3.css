@@ -1,0 +1,45 @@
+.CtxtMenu_MenuClose {
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  border: 2px solid #aaa;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  /* Safari and Chrome */
+  -moz-border-radius: 18px;
+  /* Firefox */
+  -khtml-border-radius: 18px;
+  /* Konqueror */
+  font-family: "Courier New", Courier;
+  font-size: 24px;
+  color: #f0f0f0;
+}
+
+.CtxtMenu_MenuClose span {
+  display: block;
+  background-color: #aaa;
+  border: 1.5px solid;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  /* Safari and Chrome */
+  -moz-border-radius: 18px;
+  /* Firefox */
+  -khtml-border-radius: 18px;
+  /* Konqueror */
+  line-height: 0;
+  padding: 8px 0 6px;
+  /* may need to be browser-specific */
+}
+
+.CtxtMenu_MenuClose:hover {
+  color: white !important;
+  border: 2px solid #ccc !important;
+}
+
+.CtxtMenu_MenuClose:hover span {
+  background-color: #ccc !important;
+}
+
+.CtxtMenu_MenuClose:hover:focus {
+  outline: none;
+}

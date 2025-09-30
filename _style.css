@@ -33,6 +33,11 @@
   font-display: swap;
 }
 
+img {
+  max-width: 95%;
+  height: auto;
+}
+
 html {
   min-height: 100%;
   display: flex;

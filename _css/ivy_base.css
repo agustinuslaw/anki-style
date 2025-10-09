@@ -1,5 +1,5 @@
 :root {
-  /* For more color schemes check color_schemes.css */
+  /* See also github.com/Swiddis/Ankite/blob/main/template/color_schemes.css */
   --text: #cad3f5;
   --bg-front: rgba(36, 39, 58, 0.7);
   --bg-back: rgba(24, 25, 38, 0.7);
@@ -10,7 +10,7 @@
   --edge: color-mix(in srgb, var(--divider), transparent 60%);
 
   /* Background image variable */
-  --bg-image: url("_ivy.jpg");
+  --bg-image: url("../_img/ivy.jpg");
 
   /* Mobile-first font sizes (base = mobile) */
   --font-size-base: 14px;
@@ -21,14 +21,14 @@
 
 @font-face {
   font-family: literata;
-  src: url("_Literata-VariableFont_opsz,wght.ttf");
+  src: url("../_font/Literata-VariableFont_opsz,wght.ttf");
   font-style: normal;
   font-display: swap; /* Improves loading performance */
 }
 
 @font-face {
   font-family: literata;
-  src: url("_Literata-Italic-VariableFont_opsz,wght.ttf");
+  src: url("../_font/Literata-Italic-VariableFont_opsz,wght.ttf");
   font-style: italic;
   font-display: swap;
 }
@@ -80,6 +80,14 @@ html {
   margin: 10px auto;
   /* Smooth transitions for any hover effects */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cloze {
+  background-color: color-mix(in srgb, var(--accent), transparent 70%);
+  color: var(--accent);
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-weight: 600;
 }
 
 .top {

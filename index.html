@@ -18,7 +18,7 @@
     <script src="./_anki/js/reviewer.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            fetch('content.html')
+            fetch('./content.html')
                 .then(response => response.text())
                 .then(html => {
                     document.getElementById('qa').innerHTML = html;

@@ -28,56 +28,70 @@
 /* The additional selector is to deal with .cloze */
 
 pos.nom,
+pos.nom>span,
 pos.propn,
+pos.propn>span,
 pos.noun,
-pos.det {
+pos.noun>span,
+pos.det,
+pos.det>span {
   color: var(--nominative);
   font-weight: var(--pos-weight);
 }
 
-pos.acc {
+pos.acc,
+pos.acc>span {
   color: var(--accusative);
   font-weight: var(--pos-weight);
 }
 
-pos.dat {
+pos.dat,
+pos.dat>span {
   color: var(--dative);
   font-weight: var(--pos-weight);
 }
 
-pos.gen {
+pos.gen,
+pos.gen>span {
   color: var(--genitive);
   font-weight: var(--pos-weight);
 }
 
 pos.aux,
-pos.verb {
+pos.aux>span,
+pos.verb,
+pos.verb>span {
   color: var(--verb);
   font-weight: var(--pos-weight-bolder);
 }
 
-pos.adv {
+pos.adv,
+pos.adv>span {
   color: var(--adverb);
   font-weight: var(--pos-weight);
 }
 
-pos.cconj {
+pos.cconj,
+pos.cconj>span {
   color: var(--coordinating-conjunction);
   font-weight: var(--pos-weight);
 }
 
-pos.sconj {
+pos.sconj,
+pos.sconj>span {
   color: var(--subordinating-conjunction);
   font-weight: var(--pos-weight);
 }
 
-pos.adj {
+pos.adj,
+pos.adj>span {
   color: var(--adjective);
   font-style: italic;
   font-weight: var(--pos-weight);
 }
 
-pos.pron {
+pos.pron,
+pos.pron>span {
   color: var(--pronoun);
   font-weight: var(--pos-weight);
 }

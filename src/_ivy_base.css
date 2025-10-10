@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: literata;
-  src: url("../_font/Literata-VariableFont_opsz,wght.ttf");
+  src: url("_Literata-VariableFont_opsz,wght.ttf");
   font-style: normal;
   font-display: swap;
   /* Improves loading performance */
@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: literata;
-  src: url("../_font/Literata-Italic-VariableFont_opsz,wght.ttf");
+  src: url("_Literata-Italic-VariableFont_opsz,wght.ttf");
   font-style: italic;
   font-display: swap;
 }
@@ -117,17 +117,11 @@ html {
   font-weight: 400;
 }
 
-.sz {
-  color: var(--en-text);
-  font-size: var(--font-size-small);
-}
-
 em,
 strong,
 b {
-  font-style: italic;
-  font-weight: 400;
   /* Slightly bolder for better readability */
+  font-weight: 700;
   color: var(--accent);
 }
 

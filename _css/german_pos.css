@@ -23,8 +23,26 @@
   /* Bright golden-yellow - excellent contrast */
   --adposition: #ffd580;
   --pos-weight-light: 300;
-  --pos-weight: 500;
-  --pos-weight-bolder: 700;
+  --pos-weight: 400;
+  --pos-weight-bolder: 500;
+}
+
+/* Tooltip styling, the class contains the part of speech name */
+pos:hover::after {
+  content: attr(class);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  white-space: nowrap;
+  z-index: 1000;
+  margin-top: 20px;
+  pointer-events: none;
 }
 
 /* The additional selector is to deal with .cloze */

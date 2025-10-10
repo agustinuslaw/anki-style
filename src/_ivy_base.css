@@ -10,7 +10,7 @@
   --edge: color-mix(in srgb, var(--divider), transparent 60%);
 
   /* Background image variable */
-  --bg-image: url("../_img/ivy.jpg");
+  --bg-image: url("_ivy.jpg");
 
   /* Mobile-first font sizes (base = mobile) */
   --font-size-base: 14px;
@@ -23,7 +23,8 @@
   font-family: literata;
   src: url("../_font/Literata-VariableFont_opsz,wght.ttf");
   font-style: normal;
-  font-display: swap; /* Improves loading performance */
+  font-display: swap;
+  /* Improves loading performance */
 }
 
 @font-face {
@@ -55,13 +56,14 @@ html {
   text-align: center;
   color: var(--text);
   display: flex;
-  background: var(--bg-image) center/cover no-repeat scroll; /* Mobile-optimized */
+  background: var(--bg-image) center/cover no-repeat scroll;
+  /* Mobile-optimized */
   /* Improve text readability over background */
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-.card > div,
-.card.nightMode > div {
+.card>div,
+.card.nightMode>div {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -71,12 +73,15 @@ html {
 }
 
 #content {
-  border-radius: 20px; /* Mobile-first smaller radius */
+  border-radius: 20px;
+  /* Mobile-first smaller radius */
   box-shadow: 0 6px 45px rgba(0, 0, 0, 0.4);
-  border: 1px solid var(--edge); /* Thinner border for mobile */
+  border: 1px solid var(--edge);
+  /* Thinner border for mobile */
   overflow: hidden;
   width: 100%;
-  max-width: 95%; /* Mobile-first responsive width */
+  max-width: 95%;
+  /* Mobile-first responsive width */
   margin: 10px auto;
   /* Smooth transitions for any hover effects */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -92,12 +97,14 @@ html {
 
 .top {
   background-color: none;
-  padding: 10px; /* Mobile-first padding */
+  padding: 10px;
+  /* Mobile-first padding */
 }
 
 .bottom {
   background-color: none;
-  padding: 10px; /* Mobile-first padding */
+  padding: 10px;
+  /* Mobile-first padding */
 }
 
 .small {
@@ -119,7 +126,8 @@ em,
 strong,
 b {
   font-style: italic;
-  font-weight: 400; /* Slightly bolder for better readability */
+  font-weight: 400;
+  /* Slightly bolder for better readability */
   color: var(--accent);
 }
 
@@ -163,8 +171,8 @@ body {
     --line-height: 1.5;
   }
 
-  .card > div,
-  .card.nightMode > div {
+  .card>div,
+  .card.nightMode>div {
     padding: 20px;
   }
 
@@ -203,16 +211,18 @@ body {
 
   .top {
     background-color: var(--bg-front);
-    padding: 20px; /* Mobile-first padding */
+    padding: 20px;
+    /* Mobile-first padding */
   }
 
   .bottom {
     background-color: var(--bg-back);
-    padding: 20px; /* Mobile-first padding */
+    padding: 20px;
+    /* Mobile-first padding */
   }
 
-  .card > div,
-  .card.nightMode > div {
+  .card>div,
+  .card.nightMode>div {
     padding: 20px;
   }
 

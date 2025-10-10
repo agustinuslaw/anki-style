@@ -12,8 +12,10 @@
   --verb: #f7768e;
   /* Warm amber-orange */
   --adverb: #ff9e64;
-  /* Muted blue-grey (softer than pure black) */
-  --conjunction: #565f89;
+  /* Steel blue-grey for coordinating conjunctions (and, or, but) */
+  --coordinating-conjunction: #7c8db5;
+  /* Deeper indigo for subordinating conjunctions (because, although, when) */
+  --subordinating-conjunction: #494f73;
   /* Lavender-purple, maintains theme */
   --adjective: #bb9af7;
   /* Soft mauve-pink */
@@ -23,9 +25,8 @@
   --pos-weight-bolder: 700;
 }
 
-/* nom, acc, dat, gen, verb, adv, conj, adj, pron */
-
 /* The additional selector is to deal with .cloze */
+
 pos.nom,
 pos.propn,
 pos.noun,
@@ -60,9 +61,13 @@ pos.adv {
   font-weight: var(--pos-weight);
 }
 
-pos.cconj,
+pos.cconj {
+  color: var(--coordinating-conjunction);
+  font-weight: var(--pos-weight);
+}
+
 pos.sconj {
-  color: var(--conjunction);
+  color: var(--subordinating-conjunction);
   font-weight: var(--pos-weight);
 }
 

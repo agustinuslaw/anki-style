@@ -20,6 +20,9 @@
   --adjective: #bb9af7;
   /* Soft mauve-pink */
   --pronoun: #f5bde6;
+  /* Warm golden-yellow for prepositions/adpositions (in, auf, mit) */
+  --adposition: #e0af68;
+  /* Font weights for emphasis */
   --pos-weight-light: 300;
   --pos-weight: 500;
   --pos-weight-bolder: 700;
@@ -93,5 +96,11 @@ pos.adj>span {
 pos.pron,
 pos.pron>span {
   color: var(--pronoun);
+  font-weight: var(--pos-weight);
+}
+
+pos.adp,
+pos.adp>span {
+  color: var(--adposition);
   font-weight: var(--pos-weight);
 }

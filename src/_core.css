@@ -1,17 +1,5 @@
+/* Colors come from each _theme.css, this is decided in _anki.css */
 :root {
-  /* See also github.com/Swiddis/Ankite/blob/main/template/color_schemes.css */
-  --text: #cad3f5;
-  --bg-front: rgba(36, 39, 58, 0.7);
-  --bg-back: rgba(24, 25, 38, 0.7);
-  --accent: #81c8be;
-  --en-text: #8087a2;
-  --divider: #6e738d;
-
-  --edge: color-mix(in srgb, var(--divider), transparent 60%);
-
-  /* Background image variable */
-  --bg-image: url("_ivy.jpg");
-
   /* Mobile-first font sizes (base = mobile) */
   --font-size-base: 14px;
   --font-size-small: 11px;
@@ -40,7 +28,7 @@ img {
 }
 
 html {
-  min-height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   font-size: var(--font-size-base);
@@ -54,9 +42,9 @@ html {
   font-size: var(--font-size-base);
   line-height: var(--line-height);
   text-align: center;
-  color: var(--text);
+  color: var(--text-color-primary);
   display: flex;
-  background: var(--bg-image) center/cover no-repeat scroll;
+  background: var(--background-image) center/cover no-repeat scroll;
   /* Mobile-optimized */
   /* Improve text readability over background */
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
@@ -76,7 +64,7 @@ html {
   border-radius: 20px;
   /* Mobile-first smaller radius */
   box-shadow: 0 6px 45px rgba(0, 0, 0, 0.4);
-  border: 1px solid var(--edge);
+  border: 1px solid var(--edge-color);
   /* Thinner border for mobile */
   overflow: hidden;
   width: 100%;
@@ -88,8 +76,8 @@ html {
 }
 
 .cloze {
-  background-color: color-mix(in srgb, var(--accent), transparent 70%);
-  color: var(--accent);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+  color: var(--accent-color);
   padding: 2px 5px;
   border-radius: 3px;
   font-weight: 600;
@@ -108,7 +96,7 @@ html {
 }
 
 .small {
-  color: var(--en-text);
+  color: var(--text-color-secondary);
   font-size: var(--font-size-small);
 }
 
@@ -122,7 +110,7 @@ strong,
 b {
   /* Slightly bolder for better readability */
   font-weight: 700;
-  color: var(--accent);
+  color: var(--accent-color);
 }
 
 .hidden {
@@ -131,7 +119,7 @@ b {
 
 hr {
   height: 2px;
-  background-color: var(--divider);
+  background-color: var(--divider-color);
   border: none;
   margin: 20px 0;
   border-radius: 1px;
@@ -147,7 +135,7 @@ button {
 button:focus,
 input:focus,
 select:focus {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--accent-color);
   outline-offset: 2px;
 }
 
@@ -204,13 +192,13 @@ body {
   }
 
   .top {
-    background-color: var(--bg-front);
+    background-color: var(--background-color-primary);
     padding: 20px;
     /* Mobile-first padding */
   }
 
   .bottom {
-    background-color: var(--bg-back);
+    background-color: var(--background-color-secondary);
     padding: 20px;
     /* Mobile-first padding */
   }

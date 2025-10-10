@@ -1,0 +1,42 @@
+:root {
+  --text-color-primary: #cad3f5;
+  --text-color-secondary: #8087a2;
+  --accent-color: #81c8be;
+  --divider-color: #6e738d;
+  --edge-color: color-mix(in srgb, var(--divider-color), transparent 60%);
+  --background-color-primary: rgba(36, 39, 58, 0.8);
+  --background-color-secondary: rgba(24, 25, 38, 0.8);
+  --background-image: url("_ivy.jpg");
+
+  /* Tooltip styling */
+  --tooltip-background-color: rgba(0, 0, 0, 0.9);
+  --tooltip-color: #ffffff;
+
+  /* Bright sky blue - high contrast against dark background */
+  --nominative-color: #82aaff;
+  /* Bright cyan - pops against purple tones */
+  --accusative-color: #89ddff;
+  /* Vibrant lime green - stands out clearly */
+  --dative-color: #c3e88d;
+  /* Bright sage green - readable contrast */
+  --genitive-color: #7cb342;
+  /* Bright coral-pink - excellent visibility */
+  --verb-color: #ff7a93;
+  /* Bright warm orange - high contrast */
+  --adverb-color: #ffb86c;
+  /* Light periwinkle - distinguishable from background purples */
+  --coordinating-conjunction-color: #a5b4e0;
+  /* Medium slate blue - readable depth */
+  --subordinating-conjunction-color: #6b7db8;
+  /* Bright lavender - brighter than background */
+  --adjective-color: #c792ea;
+  /* Bright rose-pink - high visibility */
+  --pronoun-color: #ffb2d9;
+  /* Bright golden-yellow - excellent contrast */
+  --adposition-color: #ffd580;
+}
+
+/* References
+ * [1] Core ivy colors github.com/Swiddis/Ankite/blob/main/template/color_schemes.css 
+ * [2] Ivy image from u/Ngothadei
+ */

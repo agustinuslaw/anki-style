@@ -1,28 +1,27 @@
 /* German Parts of Speech Styling for Anki Cards */
 :root {
-  /* Soft blue, lighter than original */
-  --nominative: #7aa2f7;
-  /* Cyan, echoes your accent */
+  /* Bright sky blue - high contrast against dark background */
+  --nominative: #82aaff;
+  /* Bright cyan - pops against purple tones */
   --accusative: #89ddff;
-  /* Light green, warm complement */
-  --dative: #9ece6a;
-  /* Deep forest green */
-  --genitive: #558b2f;
-  /* Soft rose-red, less harsh */
-  --verb: #f7768e;
-  /* Warm amber-orange */
-  --adverb: #ff9e64;
-  /* Steel blue-grey for coordinating conjunctions (and, or, but) */
-  --coordinating-conjunction: #7c8db5;
-  /* Deeper indigo for subordinating conjunctions (because, although, when) */
-  --subordinating-conjunction: #494f73;
-  /* Lavender-purple, maintains theme */
-  --adjective: #bb9af7;
-  /* Soft mauve-pink */
-  --pronoun: #f5bde6;
-  /* Warm golden-yellow for prepositions/adpositions (in, auf, mit) */
-  --adposition: #e0af68;
-  /* Font weights for emphasis */
+  /* Vibrant lime green - stands out clearly */
+  --dative: #c3e88d;
+  /* Bright sage green - readable contrast */
+  --genitive: #7cb342;
+  /* Bright coral-pink - excellent visibility */
+  --verb: #ff7a93;
+  /* Bright warm orange - high contrast */
+  --adverb: #ffb86c;
+  /* Light periwinkle - distinguishable from background purples */
+  --coordinating-conjunction: #a5b4e0;
+  /* Medium slate blue - readable depth */
+  --subordinating-conjunction: #6b7db8;
+  /* Bright lavender - brighter than background */
+  --adjective: #c792ea;
+  /* Bright rose-pink - high visibility */
+  --pronoun: #ffb2d9;
+  /* Bright golden-yellow - excellent contrast */
+  --adposition: #ffd580;
   --pos-weight-light: 300;
   --pos-weight: 500;
   --pos-weight-bolder: 700;

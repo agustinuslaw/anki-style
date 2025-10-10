@@ -1,79 +1,78 @@
 /* German Parts of Speech Styling for Anki Cards */
 :root {
-  --nominative: #7aa2f7; /* Soft blue, lighter than original */
-  --accusative: #89ddff; /* Cyan, echoes your accent */
-  --dative: #9ece6a; /* Light green, warm complement */
-  --genitive: #558b2f; /* Deep forest green */
-  --verb: #f7768e; /* Soft rose-red, less harsh */
-  --adverb: #ff9e64; /* Warm amber-orange */
-  --conjunction: #565f89; /* Muted blue-grey (softer than pure black) */
-  --adjective: #bb9af7; /* Lavender-purple, maintains theme */
-  --pronoun: #f5bde6; /* Soft mauve-pink */
+  /* Soft blue, lighter than original */
+  --nominative: #7aa2f7;
+  /* Cyan, echoes your accent */
+  --accusative: #89ddff;
+  /* Light green, warm complement */
+  --dative: #9ece6a;
+  /* Deep forest green */
+  --genitive: #558b2f;
+  /* Soft rose-red, less harsh */
+  --verb: #f7768e;
+  /* Warm amber-orange */
+  --adverb: #ff9e64;
+  /* Muted blue-grey (softer than pure black) */
+  --conjunction: #565f89;
+  /* Lavender-purple, maintains theme */
+  --adjective: #bb9af7;
+  /* Soft mauve-pink */
+  --pronoun: #f5bde6;
+  --pos-weight-light: 300;
+  --pos-weight: 500;
+  --pos-weight-bolder: 700;
 }
 
 /* nom, acc, dat, gen, verb, adv, conj, adj, pron */
 
 /* The additional selector is to deal with .cloze */
-.nom,
 pos.nom,
-.nom > span {
+pos.propn,
+pos.noun,
+pos.det {
   color: var(--nominative);
-  font-weight: 500;
+  font-weight: var(--pos-weight);
 }
 
-.acc,
-pos.acc,
-.acc > span {
+pos.acc {
   color: var(--accusative);
-  font-weight: 500;
+  font-weight: var(--pos-weight);
 }
 
-.dat,
-pos.dat,
-.dat > span {
+pos.dat {
   color: var(--dative);
-  font-weight: 500;
+  font-weight: var(--pos-weight);
 }
 
-.gen,
-pos.gen,
-.gen > span {
+pos.gen {
   color: var(--genitive);
-  font-weight: 500;
+  font-weight: var(--pos-weight);
 }
 
-.verb,
-pos.verb,
-.verb > span {
+pos.aux,
+pos.verb {
   color: var(--verb);
-  font-weight: 600;
+  font-weight: var(--pos-weight-bolder);
 }
 
-.adv,
-pos.adv,
-.adv > span {
+pos.adv {
   color: var(--adverb);
-  font-weight: 500;
+  font-weight: var(--pos-weight);
 }
 
-.conj,
-pos.conj,
-.conj > span {
+pos.cconj,
+pos.sconj {
   color: var(--conjunction);
-  font-weight: 500;
+  font-weight: var(--pos-weight);
 }
 
-.adj,
-pos.adj,
-.adj > span {
+pos.adj {
   color: var(--adjective);
   font-style: italic;
-  font-weight: 500;
+  font-weight: var(--pos-weight);
 }
 
-.pron,
-pos.pron,
-.pron > span {
+pos.pron {
   color: var(--pronoun);
-  font-weight: 500;
+  font-weight: var(--pos-weight);
 }

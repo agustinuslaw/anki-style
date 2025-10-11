@@ -1,4 +1,4 @@
-/* Colors come from each _theme.css, this is decided in _anki.css */
+/* Colors come from each _theme.css, span > .css, this is decided in _anki.css */
 :root {
   --pos-weight-light: 300;
   --pos-weight: 400;
@@ -23,79 +23,94 @@ pos:hover::after {
   pointer-events: none;
 }
 
-/* The additional selector is to deal with .cloze */
+/* The additional selector is to deal with being inside or outside span.cloze */
 
-pos.nom,
-pos.nom > span,
-pos.propn,
-pos.propn > span,
-pos.noun,
-pos.noun > span,
-pos.det,
-pos.det > span {
+.nom,
+span > .nom,
+.nom > span,
+.propn,
+span > .propn,
+.propn > span,
+.noun,
+span > .noun,
+.noun > span,
+.det,
+span > .det,
+.det > span {
   color: var(--nominative-color);
   font-weight: var(--pos-weight);
 }
 
-pos.acc,
-pos.acc > span {
+.acc,
+span > .acc,
+.acc > span {
   color: var(--accusative-color);
   font-weight: var(--pos-weight);
 }
 
-pos.dat,
-pos.dat > span {
+.dat,
+span > .dat,
+.dat > span {
   color: var(--dative-color);
   font-weight: var(--pos-weight);
 }
 
-pos.gen,
-pos.gen > span {
+.gen,
+span > .gen,
+.gen > span {
   color: var(--genitive-color);
   font-weight: var(--pos-weight);
 }
 
-pos.aux,
-pos.aux > span,
-pos.verb,
-pos.verb > span {
+.aux,
+span > .aux,
+.aux > span,
+.verb,
+span > .verb,
+.verb > span {
   color: var(--verb-color);
   font-weight: var(--pos-weight-bolder);
 }
 
-pos.adv,
-pos.adv > span {
+.adv,
+span > .adv,
+.adv > span {
   color: var(--adverb-color);
   font-weight: var(--pos-weight);
 }
 
-pos.cconj,
-pos.cconj > span {
+.cconj,
+span > .cconj,
+.cconj > span {
   color: var(--coordinating-conjunction-color);
   font-weight: var(--pos-weight);
 }
 
-pos.sconj,
-pos.sconj > span {
+.sconj,
+span > .sconj,
+.sconj > span {
   color: var(--subordinating-conjunction-color);
   font-weight: var(--pos-weight);
 }
 
-pos.adj,
-pos.adj > span {
+.adj,
+span > .adj,
+.adj > span {
   color: var(--adjective-color);
   font-style: italic;
   font-weight: var(--pos-weight);
 }
 
-pos.pron,
-pos.pron > span {
+.pron,
+span > .pron,
+.pron > span {
   color: var(--pronoun-color);
   font-weight: var(--pos-weight);
 }
 
-pos.adp,
-pos.adp > span {
+.adp,
+span > .adp,
+.adp > span {
   color: var(--adposition-color);
   font-weight: var(--pos-weight);
 }

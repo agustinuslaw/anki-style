@@ -4,8 +4,8 @@
   --accent-color: #f57d26;
   --divider-color: #829181;
   --edge-color: color-mix(in srgb, var(--divider-color), transparent 70%);  
-  --background-color-primary: #fdf6e3;
-  --background-color-secondary: #efebd4;
+  --background-color-primary: #fdf6e3e3;
+  --background-color-secondary: #efebd4e3;
   --background-image: url("_sunset.jpg");
 
   /* Tooltip styling */
